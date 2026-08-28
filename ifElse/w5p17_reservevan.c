@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int day1, day2, day3;
+
+    scanf("%d %d %d", &day1, &day2, &day3);
+    if ((day1 <= day2) && (day1 <= day3)) {
+        printf("A");
+    } else if ((day2 <= day1) && (day2 <= day3)) {
+        printf("B");
+    } else {
+        printf("C");
+    }
+
+    return 0;
+}
